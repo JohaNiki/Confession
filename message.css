@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #713e4a;
+  isolation: isolate;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at 15% 20%, #fffafd 0, transparent 38%),
+    radial-gradient(ellipse at 85% 78%, #f9dce5 0, transparent 42%),
+    linear-gradient(135deg, #fff4f6, #f8e6eb);
+}
+
+body::before,
+body::after {
+  position: fixed;
+  z-index: 0;
+  width: clamp(8rem, 22vw, 16rem);
+  aspect-ratio: 1.1;
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 180' fill='none' stroke='%23cf879c' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M100 160C83 144 25 105 27 64c1-24 19-39 40-35 16 3 27 16 33 31 8-17 21-30 38-31 22-1 38 15 36 38-3 40-53 77-74 93Z'/%3E%3Cpath d='M98 154C76 135 33 104 33 66c0-19 13-33 31-32 15 1 27 13 34 29 10-18 22-27 38-27 18 0 32 14 31 34-1 34-45 69-69 84Z' opacity='.55'/%3E%3C/svg%3E") center / contain no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+body::before {
+  top: 2vh;
+  left: 3vw;
+  transform: rotate(-18deg);
+}
+
+body::after {
+  right: 3vw;
+  bottom: 1vh;
+  transform: rotate(18deg);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 380px);
+  padding: 32px 24px;
+  text-align: center;
+  background: #fffafa;
+  border: 2px solid #f3c2cd;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #a94d631f;
+}
+
+h1 {
+  color: #c74763;
+  font-size: 1.6rem;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #d88a9a;
+  text-align: center;
+
+}
+
+button {
+  border: 0;
+  color: white;
+  background: #d94360;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b9304b;
+}
+
+#message {
+  margin-top: 23px;
+  line-height: 1.8;
+
+}
+
+.hearts {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+
+.footer {
+  text-align: left;
+}
+
+#message-ps {
+  margin: 2px 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
