@@ -56,7 +56,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  if (/^jhayminn*$/.test(normalizedName) && normalizedName.length > 20) {
+  if (/^jhaymhinn*$/.test(normalizedName) && normalizedName.length > 20) {
     showMessage("HOY sobra sobra na yan HWAHAHHHA");
     return;
   }
