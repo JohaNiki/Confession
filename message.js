@@ -90,7 +90,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  if (!/^jhayhminn*$/.test(normalizedName) && !isRoselaName) {
+  if (!/^jhaymhinn*$/.test(normalizedName) && !isRoselaName) {
     const funnyReplies = [
       `${name}? pangalan mo ba yannnn?`,
       `Name mo ba talaga yan? Hmmmmmm "${name}"? Ngek Access Denied.`,
