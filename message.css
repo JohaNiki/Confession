@@ -42,6 +42,17 @@ body::after {
   transform: rotate(18deg);
 }
 
+.waiting-note {
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  z-index: 1;
+  color: #8d6570;
+  font-size: 0.65rem;
+  opacity: 0.8;
+
+}
+
 .card {
   position: relative;
   z-index: 1;
