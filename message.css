@@ -44,7 +44,7 @@ body::after {
 
 .waiting-note {
   position: fixed;
-  right: 1px;
+  right: 10px;
   bottom: 1px;
   z-index: 1;
   color: #8d6570;
