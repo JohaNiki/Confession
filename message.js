@@ -51,7 +51,7 @@ form.addEventListener("submit", function (event) {
   const normalizedName = name.toLowerCase();
   const isRoselaName = /^rosela{1,21}$/.test(normalizedName);
 
-  if (normalizedName === "jhaymin q rosela") {
+  if (normalizedName === "jhaymhin q rosela") {
     showMessage("Sheesh full name pa nga PFTHAWHHAHAWHA ");
     return;
   }
@@ -90,7 +90,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  if (!/^jhayminn*$/.test(normalizedName) && !isRoselaName) {
+  if (!/^jhayhminn*$/.test(normalizedName) && !isRoselaName) {
     const funnyReplies = [
       `${name}? pangalan mo ba yannnn?`,
       `Name mo ba talaga yan? Hmmmmmm "${name}"? Ngek Access Denied.`,
